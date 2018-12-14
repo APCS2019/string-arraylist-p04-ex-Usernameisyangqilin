@@ -5,4 +5,16 @@
      *  The returned string part has length at least 1 and largest 5. 
      *  The method gives prefernce to return the longer matches.
      */
-    private StringPart findPart(String str)
+    private StringPart findPart(String str){
+        int i = word.length();
+        while( i != 0){
+        int index = masterString.indexOf(word.subString(0,i));
+            if(index /1= -1){
+            return new StringPart(index , i);
+            }
+            else i --;
+        }
+   return null;
+        }
+       
+  
